@@ -1,0 +1,8 @@
+version: '3.9'
+services:
+    metagpt:
+        container_name: metagpt
+        image: metagpt/metagpt:latest
+        volumes:
+          - ~/metagpt/config/config2.yaml:/app/metagpt/config/config2.yaml
+          - ~/metagpt/workspace:/app/metagpt/workspace
